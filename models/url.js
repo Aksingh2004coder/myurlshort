@@ -18,6 +18,14 @@ const urlSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
+    },
+    visitCount: {
+        type: Number,
+        default: 0
+    },
+    lastVisitedAt: {
+        type: Date,
+        default: null
     }
 });
 

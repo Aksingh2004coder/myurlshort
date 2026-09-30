@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>URL Shortener</title>
+</head>
+<body>
+	<h1>URL Shortener</h1>
+
+	<form action="/" method="POST">
+		<label for="originalUrl">Enter a URL:</label>
+		<input type="url" id="originalUrl" name="originalUrl" required>
+		<button type="submit">Shorten URL</button>
+	</form>
+
+	<% if (shortUrl) { %>
+		<p>Short URL: http://localhost:8001/<%= shortUrl %></p>
+	<% } %>
+
+	<% if (error) { %>
+		<p><%= error %></p>
+	<% } %>
+</body>
+</html>
