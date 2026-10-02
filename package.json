@@ -10,9 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
     "mongoose": "^8.24.4",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "uuid": "^14.0.2"
   }
 }
